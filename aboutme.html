@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FoC</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-image: url('cool.jpg'); /* Use the uploaded image as background */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: rgba(22, 33, 62, 0.8); /* Slightly transparent dark blue for header */
+      padding: 10px;
+      text-align: center;
+    }
+
+    header h2 {
+      color: #00b8d9; /* Teal color for the header text */
+    }
+
+    /* Navigation menu style */
+    nav {
+      margin-top: 20px;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; /* Horizontally center the menu */
+    }
+
+    nav ul li {
+      margin: 0 20px; /* Spacing between links */
+    }
+
+    nav ul li a {
+      color: #00b8d9; /* Teal color for links */
+      text-decoration: none;
+      font-size: 20px; /* Increase font size */
+      padding: 10px 20px;
+      background-color: rgba(22, 33, 62, 0.8); /* Add dark blue background */
+      border-radius: 5px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(0, 184, 217, 0.7); /* Teal hover effect */
+    }
+
+    /* Large blue transparent box */
+    .content-box {
+      background-color: rgba(22, 33, 62, 0.8); /* Large blue transparent box */
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 900px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: rgba(15, 52, 96, 0.8);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    img {
+      border: 2px solid #00b8d9; /* Teal border around image */
+      width: 200px;
+      height: 400px;
+      margin-right: 50px;
+    }
+
+    p {
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    @media screen and (max-width: 768px) {
+      article {
+        margin-left: 0;
+        padding: 20px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0 0 20px 0;
+      }
+
+      nav ul {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2><b>Fundamentals of Computing</b></h2>
+</header>
+
+<!-- Horizontal Navigation Menu -->
+<nav>
+  <ul>
+    <li><h5><a href="index.html">Course</a></h5></li>
+    <li><h5><a href="project.html">Project</a></h5></li>
+    <li><h5><a href="concepts.html">Concepts</a></h5></li>
+    <li><h5><a href="database.html">Databases</a></h5></li>
+    <li><h5><a href="documentation.html">Documentation</a></h5></li>
+    <li><h5><a href="aboutme.html">Dev Team</a></h5></li>
+  </ul>
+</nav>
+
+<!-- Content Section -->
+<section>
+  <div class="content-box">
+    <article>
+      <h1>About Me</h1>
+      <p>
+        <img src="Giyan.jpg" alt="Giyan" style="float:left;">
+        Giyan Perez is currently studying at the University of Belize. He attended St. Andrews Anglican primary school and graduated from Sacred Heart high school. 
+        He majors in Information Technology at the University of Belize. He aspires to one day be a programmer and software developer.
+      </p>
+    </article>
+  </div>
+</section>
+
+<footer>
+  <p>@ Powered by UB</p>
+</footer>
+
+</body>
+</html>
