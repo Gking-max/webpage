@@ -1,53 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>AND</title>
-	<style>
-.button {
-  background-color: #008CBA; /* Blue */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+// Function to toggle the first input image and state
+let inputOne = false; // Track the state of input 1
+function toggleImage() {
+    const img = document.getElementById("toggleImage");
+    inputOne = !inputOne; // Toggle the state
+
+    if (inputOne) {
+        img.src = "https://www.iconsdb.com/icons/preview/green/button-on-xxl.png";
+    } else {
+        img.src = "https://www.iconsdb.com/icons/preview/red/button-off-xxl.png";
+    }
 }
-</style>
-</head>
-<body>
 
-<script src = "javascript.js"></script>
-<script> 
+// Function to toggle the second input image and state
+let inputTwo = false; // Track the state of input 2
+function toggleImage2() {
+    const img = document.getElementById("toggleImage2");
+    inputTwo = !inputTwo; // Toggle the state
 
-</script>
+    if (inputTwo) {
+        img.src = "https://www.iconsdb.com/icons/preview/green/button-on-xxl.png";
+    } else {
+        img.src = "https://www.iconsdb.com/icons/preview/red/button-off-xxl.png";
+    }
+}
 
- <button class="button" onclick = "and()">Run</button>
-<p>
-
-<table style="width:100%">
-
-  <tr>
-    <td>
-	<img src="https://www.iconsdb.com/icons/preview/red/button-off-xxl.png"  id="toggleImage" onclick="toggleImage(); toggleInputOne();"/>
-	<br>
-    <img src="https://www.iconsdb.com/icons/preview/red/button-off-xxl.png"  id="toggleImage2" onclick="toggleImage2(); toggleInputTwo();"/> 
-</td>
-    <td><img id="andGate" src="and2off.PNG" ></td>
-  </tr>
-
-</table>
-
-<a href="index.html">Back to Home</a></h3>
-
-</p>
-
-
-
-
-
-
-</body>
-</html>
+// AND gate function to set the output image based on both inputs
+function and() {
+    const andGate = document.getElementById("andGate");
+    if (inputOne && inputTwo) {
+        andGate.src = "and2on.PNG"; // Display the "on" AND gate image when both inputs are on
+    } else {
+        andGate.src = "and2off.PNG"; // Display the "off" AND gate image when either input is off
+    }
+}
